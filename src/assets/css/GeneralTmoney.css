@@ -1,0 +1,76 @@
+@font-face {
+  font-family: Objective;
+  src: url(./../Fonts/Objective-Regular.otf);
+}
+@font-face {
+  font-family: ObjectiveMedium;
+  src: url(./../Fonts/Objective-Medium.otf);
+}
+@font-face {
+  font-family: ObjectiveBold;
+  src: url(./../Fonts/Objective-Bold.otf);
+}
+@font-face {
+  font-family: ObjectiveExtraBold;
+  src: url(./../Fonts/Objective-ExtraBold.otf);
+}
+@font-face {
+  font-family: ObjectiveLight;
+  src: url(./../Fonts/Objective-Light.otf);
+}
+@font-face {
+  font-family: ObjectiveThin;
+  src: url(./../Fonts/Objective-Thin.otf);
+}
+@font-face {
+  font-family: Provicali;
+  src: url(./../Fonts/Provicali.otf);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 16));
+  }
+}
+.slider {
+  background: transparent !important;
+  margin: 2% 0 2% 5%;
+  overflow: hidden;
+  position: relative;
+  width: 64%;
+}
+.slider::before,
+.slider::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 35s linear infinite;
+  display: flex;
+  width: calc(250px * 32);
+}
+.slider .slide {
+  width: 100%;
+  padding: 0 0.48%;
+}
+.s{
+  color: #c4c4c4;
+}
+
+.css-cymxv7{
+  width: 10% !important;
+}
